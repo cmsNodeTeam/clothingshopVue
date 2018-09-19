@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class VueApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VueApplication.class, args);
+		System.out.println("");
 	}
 }
