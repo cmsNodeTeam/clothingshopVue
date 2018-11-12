@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.0.RELEASE</version>
+		<version>2.1.0.RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -47,10 +47,15 @@
 
 	<build>
 		<plugins>
+			<!-- 打全包配置 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- 打小包配置,这个打小包虽然能打了,但是不能启起来,是清单文件的原因,以后再研究吧 -->
+			<!-- <plugin> <artifactId>maven-jar-plugin</artifactId> <configuration> 
+				<archive> <manifest> <mainClass>com.dev.api.VueApplication</mainClass> <addDefaultImplementationEntries>true</addDefaultImplementationEntries> 
+				</manifest> </archive> </configuration> </plugin> -->
 		</plugins>
 	</build>
 
