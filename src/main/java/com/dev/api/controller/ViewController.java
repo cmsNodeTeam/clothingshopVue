@@ -12,4 +12,9 @@ public class ViewController {
 	public String gotoIndex() {
 		return "index";
 	}
+	
+	@GetMapping("index/*")
+	public String gotoAllIndex() {
+		return "index";
+	}
 }
